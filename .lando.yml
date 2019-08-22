@@ -1,0 +1,4 @@
+name: drupal-achraf
+recipe: drupal8
+config:
+  webroot: .
