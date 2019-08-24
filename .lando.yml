@@ -2,3 +2,16 @@ name: drupal-achraf
 recipe: drupal8
 config:
   webroot: .
+proxy:
+  mailhog:
+    - mail.drupal8.lando.site
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: 1026
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database

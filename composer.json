@@ -9,7 +9,8 @@
         "drupal/admin_toolbar": "^1.27",
         "drupal/adminimal_theme": "^1.5",
         "drupal/adminimal_admin_toolbar": "^1.9",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "drupal/examples": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.7"
