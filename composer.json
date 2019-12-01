@@ -10,7 +10,9 @@
         "drupal/adminimal_theme": "^1.5",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/console": "~1.0",
-        "drupal/examples": "^1.0"
+        "drupal/examples": "^1.0",
+        "drupal/recurring_events": "1.x-dev",
+        "drush/drush": "^10.0"
     },
     "replace": {
         "drupal/core": "^8.7"
