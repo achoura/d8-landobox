@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains bwsc_rainfall.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bwsc_rainfall_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bwsc_rainfall module.
+    case 'help.page.bwsc_rainfall':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Handle Rainfall Data') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bwsc_rainfall_theme() {
+  return [
+    'bwsc_rainfall' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+name: 'BWSC Rainfall'
+type: module
+description: 'Handle Rainfall Data'
+core: 8.x
+package: 'Custom'

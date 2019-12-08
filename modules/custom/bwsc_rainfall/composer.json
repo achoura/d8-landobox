@@ -1,0 +1,13 @@
+{
+    "name": "bwsc_rainfall",
+    "type": "drupal-module",
+    "description": "Handle Rainfall Data",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/bwsc_rainfall",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/bwsc_rainfall",
+        "source": "http://cgit.drupalcode.org/bwsc_rainfall",
+    },
+}
