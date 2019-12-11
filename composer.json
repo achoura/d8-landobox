@@ -14,7 +14,8 @@
         "drupal/recurring_events": "1.x-dev",
         "drush/drush": "^10.0",
         "drupal/migrate_tools": "^4.5",
-        "drupal/migrate_source_csv": "^3.1"
+        "drupal/migrate_source_csv": "^3.1",
+        "drupal/restui": "^1.17"
     },
     "replace": {
         "drupal/core": "^8.7"
