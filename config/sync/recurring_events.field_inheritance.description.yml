@@ -1,0 +1,12 @@
+uuid: 6878583f-254e-44c9-9457-031fb9ab4bc4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 02F4MbcSAHFiadpl1m1oGZZqQi2FQHgDrHfVeLmztfY
+id: description
+label: Description
+type: append
+sourceField: body
+entityField: body
+plugin: text_inheritance

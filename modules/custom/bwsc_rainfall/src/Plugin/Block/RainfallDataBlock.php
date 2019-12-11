@@ -19,7 +19,7 @@ class RainfallDataBlock extends BlockBase {
    */
   public function build() {
     $build = [
-      '#markup' => $this->t('This is a simple block!'),
+      '#markup' => $this->t('Rainfall Data Block!'),
     ];
 
     return $build;
