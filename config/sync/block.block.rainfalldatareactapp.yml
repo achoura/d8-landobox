@@ -1,0 +1,26 @@
+uuid: 1564fd54-ea8a-4a8d-963f-5dd1ae9fa4e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - bwsc_rainfall
+    - system
+  theme:
+    - bartik
+id: rainfalldatareactapp
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: rainfall_data_block
+settings:
+  id: rainfall_data_block
+  label: 'Rainfall Data React App'
+  provider: bwsc_rainfall
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

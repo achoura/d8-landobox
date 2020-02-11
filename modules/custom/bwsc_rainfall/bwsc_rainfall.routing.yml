@@ -1,0 +1,19 @@
+bwsc_rainfall.rainfall_data_settings_form:
+  path: '/admin/config/bwsc_rainfall/settings'
+  defaults:
+    _form: '\Drupal\bwsc_rainfall\Form\RainfallDataSettingsForm'
+    _title: 'RainfallDataSettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+bwsc_rainfall.rainfall_controller_fetchSites:
+  path: '/bwsc_rainfall/fetchSites'
+  defaults:
+    _controller: '\Drupal\bwsc_rainfall\Controller\RainfallController::fetchSites'
+    _title: 'fetchSites'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
