@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains bwsc_rainfall.install.
+ */
+
+/**
+ * Implements hook_schema().
+ *
+ *
+ */
+function bwsc_rainfall_schema() {
+
+  $schema['rainfall_sites'] = [
+    'description' => 'FlowWorks available Sites',
+    'fields' => [
+      'sid' => [
+        'description' => 'The primary identifier for a site (Site Id).',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'site_name' => [
+        'description' => 'The site name.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'channel_rainfall' => [
+        'description' => 'Rainfall channel with 5min intervall data points.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ],
+      'channel_hourly_rainfall' => [
+        'description' => 'Rainfall channel with hourly intervall data points.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ],
+      'channel_daily_rainfall' => [
+        'description' => 'Rainfall channel with daily intervall data points.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ],
+    ],
+    'primary key' => ['sid'],
+  ];
+
+
+  return $schema;
+}

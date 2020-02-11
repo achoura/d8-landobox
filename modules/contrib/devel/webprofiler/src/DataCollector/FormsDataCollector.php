@@ -2,7 +2,6 @@
 
 namespace Drupal\webprofiler\DataCollector;
 
-use Drupal\Core\Form\FormBuilderInterface;
 use Drupal\webprofiler\DrupalDataCollectorInterface;
 use Drupal\webprofiler\Form\FormBuilderWrapper;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
@@ -18,14 +17,14 @@ class FormsDataCollector extends DataCollector implements DrupalDataCollectorInt
   use StringTranslationTrait, DrupalDataCollectorTrait;
 
   /**
-   * @var \Drupal\Core\Form\FormBuilderInterface
+   * @var \Drupal\webprofiler\Form\FormBuilderWrapper
    */
   private $formBuilder;
 
   /**
-   * @param \Drupal\Core\Form\FormBuilderInterface $formBuilder
+   * @param \Drupal\webprofiler\Form\FormBuilderWrapper $formBuilder
    */
-  public function __construct(FormBuilderInterface $formBuilder) {
+  public function __construct(FormBuilderWrapper $formBuilder) {
     $this->formBuilder = $formBuilder;
 
     $this->data['forms'] = [];
@@ -35,22 +34,18 @@ class FormsDataCollector extends DataCollector implements DrupalDataCollectorInt
    * {@inheritdoc}
    */
   public function collect(Request $request, Response $response, \Exception $exception = NULL) {
-    $this->data['forms'] = [];
-
-    if ($this->formBuilder instanceof FormBuilderWrapper) {
-      $this->data['forms'] = $this->formBuilder->getBuildForm();
-    }
+    $this->data['forms'] = $this->formBuilder->getBuildForm();
   }
 
   /**
    * @return array
    */
   public function getForms() {
-    return (!empty($this->data['forms']) && is_array($this->data['forms'])) ? $this->data['forms'] : [];
+    return $this->data['forms'];
   }
 
   /**
-   * @return int
+   * @return array
    */
   public function getFormsCount() {
     return count($this->getForms());

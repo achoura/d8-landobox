@@ -1,0 +1,7 @@
+services:
+  logger.channel.bwsc_rainfall:
+    parent: logger.channel_base
+    arguments: ['bwsc_rainfall']
+  bwsc_rainfall.rainfall_manager:
+    class: Drupal\bwsc_rainfall\Rainfall\RainfallManager
+    arguments: ['@http_client', '@messenger']

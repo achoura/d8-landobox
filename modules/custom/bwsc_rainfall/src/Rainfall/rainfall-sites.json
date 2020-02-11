@@ -1,0 +1,72 @@
+[
+  {
+    "site_id": 2235,
+    "site_name": "Union Park",
+    "rainfall_channel_id": 65,
+    "hourly_channel_id": 75,
+    "daily_channel_id": 83
+  },
+  {
+    "site_id": 2236,
+    "site_name": "Roslindale",
+    "rainfall_channel_id": 63,
+    "hourly_channel_id": 82,
+    "daily_channel_id": 90
+  },
+  {
+    "site_id": 2238,
+    "site_name": "Allstone",
+    "rainfall_channel_id": 53,
+    "hourly_channel_id": 76,
+    "daily_channel_id": 84
+  },
+  {
+    "site_id": 12187,
+    "site_name": "E Boston",
+    "rainfall_channel_id": 732,
+    "hourly_channel_id": 747,
+    "daily_channel_id": 745
+  },
+  {
+    "site_id": 2241,
+    "site_name": "Charlstone",
+    "rainfall_channel_id": 55,
+    "hourly_channel_id": 77,
+    "daily_channel_id": 85
+  },
+  {
+    "site_id": 2242,
+    "site_name": "Longwood",
+    "rainfall_channel_id": 62,
+    "hourly_channel_id": 81,
+    "daily_channel_id": 89
+  },
+  {
+    "site_id": 2239,
+    "site_name": "Hyde Park",
+    "rainfall_channel_id": 60,
+    "hourly_channel_id": 80,
+    "daily_channel_id": 88
+  },
+  {
+    "site_id": 2240,
+    "site_name": "Dorche Talbot",
+    "rainfall_channel_id": 58,
+    "hourly_channel_id": 79,
+    "daily_channel_id": 87
+  },
+  {
+    "site_id": 2237,
+    "site_name": "Dorche Adams",
+    "rainfall_channel_id": 56,
+    "hourly_channel_id": 78,
+    "daily_channel_id": 86
+  },
+  {
+    "site_id": 12188,
+    "site_name": "Roxbury",
+    "rainfall_channel_id": 738,
+    "hourly_channel_id": 753,
+    "daily_channel_id": 751
+  }
+]

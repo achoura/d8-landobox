@@ -1,0 +1,6 @@
+bwsc_rainfall.rainfall_data_settings_form:
+  title: 'Rainfall Data Settings'
+  route_name: bwsc_rainfall.rainfall_data_settings_form
+  description: 'Settings for Rainfall Data'
+  parent: system.admin_config_system
+  weight: 99
